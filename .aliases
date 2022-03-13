@@ -1,1 +1,8 @@
-/Users/guushuizen/.bashrc
+alias pa="php artisan"
+alias pm="python manage.py"
+
+alias bs="cd ~/boloo/boloo-server/"
+alias bc="cd ~/boloo/boloo-react/"
+alias bfs="cd ~/boloo/boloo-forwarding-server"
+alias bfc="cd ~/boloo/boloo-forwarding-client"
+alias bfr="cd ~/boloo/boloo-forwarding-registration"
