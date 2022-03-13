@@ -1,6 +1,6 @@
 export ZSH="/Users/guushuizen/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="cloud"
 
 HYPHEN_INSENSITIVE="true"
 
