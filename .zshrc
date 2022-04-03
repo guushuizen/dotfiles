@@ -35,3 +35,4 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.aliases
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
