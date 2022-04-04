@@ -21,8 +21,8 @@ plugins=(git)
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 source $ZSH/oh-my-zsh.sh
-# source /usr/local/etc/profile.d/z.sh
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
@@ -35,4 +35,9 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.aliases
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/guus/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/guus/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/guus/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/guus/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
